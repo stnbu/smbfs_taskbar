@@ -1,7 +1,6 @@
+# -*- coding: utf-8 -*-
 """
-foo foo foo foo foo foo foo foo foo foo foo foo foo foo
-foo foo foo foo foo foo foo foo foo foo foo foo foo foo
-foo foo foo foo foo foo foo foo foo foo foo foo foo foo
+Manage OS-X smbfs mounts via a simple GUI featuring a taskbar icon.
 """
 
 from main import *

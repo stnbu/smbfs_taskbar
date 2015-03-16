@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import wx
 import wx.grid
 import re
@@ -98,6 +99,7 @@ class PreferencesDialog(wx.Dialog):
         for row, mount in enumerate(mounts):
             for column, field_name in enumerate(headers):
                 value = mount[field_name]
+                value = str(value)
                 grid.SetCellValue(row, column, value)
 
     def _get_grid(self, grid):

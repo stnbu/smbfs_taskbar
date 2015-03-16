@@ -19,7 +19,7 @@ def issue_smbfs_mount_command(data):
     else:
         auth_prefix = ''
 
-    mount_command_template = 'mount -t smbfs //{auth_prefix}{host}/{share}/{path} {mountpoint}'
+    mount_command_template = 'mount -t smbfs //${auth_prefix}{host}:/{share}/{path} {mountpoint}'
     kwargs = {}
     kwargs.update(data)
     kwargs['auth_prefix'] = auth_prefix

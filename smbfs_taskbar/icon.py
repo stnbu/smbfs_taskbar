@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from wx.lib.embeddedimage import PyEmbeddedImage
 
 # https://www.iconfinder.com/icons/1452/samba_icon
