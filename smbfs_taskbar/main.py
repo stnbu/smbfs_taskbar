@@ -4,8 +4,8 @@ import re
 import os
 from collections import namedtuple
 from smbfs_taskbar.data import ApplicationData, USER_DB_FILE, APPLICATION_TITLE
-from smbfs_taskbar.icon import icon
 from smbfs_taskbar import util
+from smbfs_taskbar.icon import icon
 
 
 CheckboxItem = namedtuple('CheckboxItem', ('attr_name','id', 'description'))
@@ -248,9 +248,17 @@ class SmbfsTaskBarFrame(wx.Frame):
     def OnTaskBarLeftClick(self, event):
         self.ico.PopupMenu(self.ico.CreatePopupMenu())
 
+class MacApp(wx.App):
+
+    def MacReopenApp(self):
+        "self.GetTopWindow().Raise()"
+    def MacNewFile(self):
+        ""
+    def MacPrintFile(self, file_path):
+        ""
 
 def main(argv=None):
-    app = wx.App(
+    app = MacApp(
         redirect=False,
         useBestVisual=True,
         clearSigInt=True,

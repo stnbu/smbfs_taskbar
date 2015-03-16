@@ -2,9 +2,12 @@
 import os
 import sys
 import re
-import keyring
 
-keyring.set_keyring(keyring.backends.OS_X.Keyring())
+try:
+    import keyring
+    keyring.set_keyring(keyring.backends.OS_X.Keyring())
+except ImportError:
+    pass
 
 def issue_smbfs_mount_command(data):
     if data.get('username', None) is not None:

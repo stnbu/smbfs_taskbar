@@ -1,7 +1,4 @@
-"""
-foo foo foo foo foo foo foo foo foo foo foo foo foo foo
-foo foo foo foo foo foo foo foo foo foo foo foo foo foo
-foo foo foo foo foo foo foo foo foo foo foo foo foo foo
-"""
 
-from main import *
+foo foo foo foo foo foo foo foo foo foo foo foo foo foo
+foo foo foo foo foo foo foo foo foo foo foo foo foo foo
+foo foo foo foo foo foo foo foo foo foo foo foo foo foo
